@@ -47,7 +47,7 @@
 <script>
     async function getData(selected_major) {
     
-        var response = await fetch('cit5students.json'); // this is an ajax GET request
+        var response = await fetch('cit5students.json'); 
         
         if(response.ok) {
             var data = await response.json();
