@@ -51,7 +51,7 @@
         
         if(response.ok) {
             var data = await response.json();
-            student_data = data.filter( (item) => item.major == selected_major );
+            student_data = data.filter( (name) => name.major == selected_major );
             
             var templateText = document.getElementById('majorTemplate').innerHTML;
             var compiledTemplateText = Handlebars.compile(templateText); 
