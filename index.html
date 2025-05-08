@@ -18,7 +18,7 @@
     <div>
        <ul class="nav navbar-nav">
            <li class="active"><a href="index.html">All Tickets</a></li>
-           <li><a href="25over.html">25mph or move over</a></li>
+           <li><a href="25over.html">25mph or more over</a></li>
        </ul>
     </div>
 
@@ -62,7 +62,7 @@
                 async getData() {
                     const response = await fetch('tickets1.json')
                     this.tickets = await response.json()
-                    //tickets = data.filter( (item) => item.major == majSelect );     
+                        
                 },
             }
           })
