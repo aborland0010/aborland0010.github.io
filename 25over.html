@@ -53,7 +53,6 @@
             data() {     // returns an object of data
                 return {
                     tickets: [],           // array to hold student data
-		    tickesOver25: [],
 		    showTable: false
                 }
             },
@@ -66,7 +65,7 @@
                     const response = await fetch('tickets1.json')
                     this.tickets = await response.json()
                     this.showTable = true
-		    this.ticketsOver25 = this.tickets.filter( (item) => (item.actual_speed - item.posted_speed) >= 25 );
+		    this.tickets = this.tickets.filter( (item) => (item.actual_speed - item.posted_speed) >= 25 );
 		    
                 },
 
